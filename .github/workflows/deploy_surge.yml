@@ -31,12 +31,13 @@ jobs:
       
       - name: GitHub Action for NPM/Chrome
         uses: daleobrien/npm-with-chrome-browser-action@v1.0.1
-      - name: Build React app
-        run: npm build
-
       - name: Install React app
         run: npm install
 
+      - name: Build React app
+        run: npm build
+
+      
       - name: Install Surge
         run: npm install -g surge
       - name: Run Surge
